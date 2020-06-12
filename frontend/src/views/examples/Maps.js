@@ -1,122 +1,54 @@
-/*!
+import React, { useState, useEffect } from "react";
+import ReactMapGL, { Marker } from "react-map-gl";
+import * as aedData from "../../data/aedLocation.json";
 
-=========================================================
-* Argon Dashboard React - v1.1.0
-=========================================================
+const Maps = (props) => {
+  const [viewport, setViewPort] = useState({
+    latitude: 1.340863,
+    longitude: 103.8303918,
+    zoom: 11,
+    width: "100vw",
+    height: "100vh",
+  });
 
-* Product Page: https://www.creative-tim.com/product/argon-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-react/blob/master/LICENSE.md)
+  const arr = [];
 
-* Coded by Creative Tim
+  useEffect(() => {
+    const geoData = aedData.features;
+    let randomAedPos = geoData[Math.floor(Math.random() * geoData.length)];
+    for (let i = 0; i < 100; i++) {
+      arr.push(randomAedPos);
+    }
+    console.log("after all", arr);
+  });
 
-=========================================================
+  return (
+    <div>
+      <ReactMapGL
+        {...viewport}
+        mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
+        onViewportChange={(view) => {
+          setViewPort(view);
+        }}
+        mapStyle="mapbox://styles/qtxbryan/ckbcehlci0yt01is4202useay"
+        style={{ maxWidth: "100%" }}
+      >
+        {arr.map((marker) => {
+          console.log(marker);
 
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import React from "react";
-// react plugin used to create google maps
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker
-} from "react-google-maps";
-
-// reactstrap components
-import { Card, Container, Row } from "reactstrap";
-
-// core components
-import Header from "components/Headers/Header.js";
-// mapTypeId={google.maps.MapTypeId.ROADMAP}
-const MapWrapper = withScriptjs(
-  withGoogleMap(props => (
-    <GoogleMap
-      defaultZoom={12}
-      defaultCenter={{ lat: 40.748817, lng: -73.985428 }}
-      defaultOptions={{
-        scrollwheel: false,
-        styles: [
-          {
-            featureType: "administrative",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#444444" }]
-          },
-          {
-            featureType: "landscape",
-            elementType: "all",
-            stylers: [{ color: "#f2f2f2" }]
-          },
-          {
-            featureType: "poi",
-            elementType: "all",
-            stylers: [{ visibility: "off" }]
-          },
-          {
-            featureType: "road",
-            elementType: "all",
-            stylers: [{ saturation: -100 }, { lightness: 45 }]
-          },
-          {
-            featureType: "road.highway",
-            elementType: "all",
-            stylers: [{ visibility: "simplified" }]
-          },
-          {
-            featureType: "road.arterial",
-            elementType: "labels.icon",
-            stylers: [{ visibility: "off" }]
-          },
-          {
-            featureType: "transit",
-            elementType: "all",
-            stylers: [{ visibility: "off" }]
-          },
-          {
-            featureType: "water",
-            elementType: "all",
-            stylers: [{ color: "#5e72e4" }, { visibility: "on" }]
-          }
-        ]
-      }}
-    >
-      <Marker position={{ lat: 40.748817, lng: -73.985428 }} />
-    </GoogleMap>
-  ))
-);
-
-class Maps extends React.Component {
-  render() {
-    return (
-      <>
-        <Header />
-        {/* Page content */}
-        <Container className="mt--7" fluid>
-          <Row>
-            <div className="col">
-              <Card className="shadow border-0">
-                <MapWrapper
-                  googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-                  loadingElement={<div style={{ height: `100%` }} />}
-                  containerElement={
-                    <div
-                      style={{ height: `600px` }}
-                      className="map-canvas"
-                      id="map-canvas"
-                    />
-                  }
-                  mapElement={
-                    <div style={{ height: `100%`, borderRadius: "inherit" }} />
-                  }
-                />
-              </Card>
-            </div>
-          </Row>
-        </Container>
-      </>
-    );
-  }
-}
+          return (
+            <Marker
+              key={marker.properties.Name}
+              latitude={marker.geometry.coordinates[1]}
+              longitude={marker.geometry.coordinates[0]}
+            >
+              <div>AED</div>
+            </Marker>
+          );
+        })}
+      </ReactMapGL>
+    </div>
+  );
+};
 
 export default Maps;

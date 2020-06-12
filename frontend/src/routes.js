@@ -18,7 +18,6 @@
 import Index from "views/Index.js";
 import Maps from "views/examples/Maps.js";
 
-
 import DemoFireDetection from "views/examples/DemoFireDetection.js";
 
 var routes = [
@@ -27,21 +26,21 @@ var routes = [
     name: "Dashboard",
     icon: "ni ni-chart-bar-32 text-primary",
     component: Index,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/maps",
     name: "Maps",
     icon: "ni ni-square-pin text-orange",
     component: Maps,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/demoFireDetection",
     name: "Demo Fire Detection",
     icon: "ni ni-folder-17 text-primary",
     component: DemoFireDetection,
-    layout: "/admin"
+    layout: "/admin",
   },
 ];
 export default routes;
