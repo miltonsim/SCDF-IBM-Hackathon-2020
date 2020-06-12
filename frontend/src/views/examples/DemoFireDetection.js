@@ -69,7 +69,7 @@ class DemoFireDetection extends React.Component {
                             <div className=" col">
                                 <Card className=" shadow">
                                     <CardHeader className=" bg-transparent">
-                                        <h3 className=" mb-0">Upload a file</h3>
+                                        <h3 className=" mb-0"><i class="ni ni-camera-compact"></i>  Upload a file</h3>
                                     </CardHeader>
                                     <CardBody>
                                         <form method="post" action="#" id="#">

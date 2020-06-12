@@ -126,9 +126,17 @@ class Sidebar extends React.Component {
             <span className="navbar-toggler-icon" />
           </button>
           {/* Brand */}
-          <h2>SCDF x IBM</h2>
-          <h4>Team BLMNK</h4>
-          <h5>APPLICATION NAME HERE</h5>
+          <NavbarBrand className="" {...navbarBrandProps}>
+            <img
+              alt={logo.imgAlt}
+              className="navbar-brand-img"
+              style={{"max-height": "6rem"}}
+              src={require("assets/img/brand/scdfxibmlogo.jpg")}
+            />
+            <h2>SCDF x IBM</h2>
+            <h4>Team BLMNK</h4>
+            <h5>APPLICATION NAME HERE</h5>
+          </NavbarBrand>
           {/* User */}
           <Nav className="align-items-center d-md-none">
             <UncontrolledDropdown nav>
@@ -197,10 +205,10 @@ class Sidebar extends React.Component {
                         <img alt={logo.imgAlt} src={logo.imgSrc} />
                       </Link>
                     ) : (
-                      <a href={logo.outterLink}>
-                        <img alt={logo.imgAlt} src={logo.imgSrc} />
-                      </a>
-                    )}
+                        <a href={logo.outterLink}>
+                          <img alt={logo.imgAlt} src={logo.imgSrc} />
+                        </a>
+                      )}
                   </Col>
                 ) : null}
                 <Col className="collapse-close" xs="6">
@@ -236,7 +244,7 @@ class Sidebar extends React.Component {
             {/* Divider */}
             <hr className="my-3" />
             {/* Heading */}
-            
+
           </Collapse>
         </Container>
       </Navbar>
