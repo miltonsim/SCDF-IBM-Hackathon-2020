@@ -25,21 +25,21 @@ var routes = [
   {
     path: "/index",
     name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
+    icon: "ni ni-chart-bar-32 text-primary",
     component: Index,
     layout: "/admin"
   },
   {
     path: "/maps",
     name: "Maps",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "ni ni-square-pin text-orange",
     component: Maps,
     layout: "/admin"
   },
   {
     path: "/demoFireDetection",
     name: "Demo Fire Detection",
-    icon: "ni ni-pin-3 text-orange",
+    icon: "ni ni-folder-17 text-primary",
     component: DemoFireDetection,
     layout: "/admin"
   },
