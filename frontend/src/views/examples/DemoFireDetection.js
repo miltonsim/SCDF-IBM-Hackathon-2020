@@ -17,6 +17,23 @@ class DemoFireDetection extends React.Component {
     state = {
         selectedFile: null
     }
+    readFileDataAsBase64(e) {
+        const file = e.target.files[0];
+    
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+    
+            reader.onload = (event) => {
+                resolve(event.target.result);
+            };
+    
+            reader.onerror = (err) => {
+                reject(err);
+            };
+    
+            reader.readAsDataURL(file);
+        });
+    }
 
     onChangeHandler = event => {
 
@@ -26,6 +43,17 @@ class DemoFireDetection extends React.Component {
             loaded: 0,
         })
 
+        this.readFileDataAsBase64(event).then(result => {
+            // here's the file
+            console.log(result);
+        })
+    }
+
+    onClickHandler = () => {
+        const data = new FormData()
+        data.append('file', this.state.selectedFile)
+
+        console.log(data);
     }
 
     render() {
@@ -50,6 +78,8 @@ class DemoFireDetection extends React.Component {
                                                 <input type="file" className="form-control" multiple="" onChange={this.onChangeHandler} />
                                             </div>
                                         </form>
+
+                                        <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
 
                                     </CardBody>
                                 </Card>
