@@ -1,6 +1,7 @@
 # SCDF x IBM
 
-## Team BLMNK
+## Team BLMNK <img src="https://github.com/lkldev/SCDF-IBM/blob/master/resouces/logo.jpg" width="80" height="80" />
+
 
 Member | Role
 ------ | -----
@@ -23,6 +24,9 @@ Users can also view the various AED devices across the island.
 
 ## Pitch Video
 
+## Architecture
+![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/architecture.jpeg)
+
 ## Detailed Solution
 
 ## Project Roadmap
@@ -33,3 +37,11 @@ not compulsory
 ## Technology Used
 1. React for Frontend
 2. IBM Cloud 
+   - Cloud Object Storage (for Storage of Video Footages)
+   - Cloud Function
+3. AWS Cloud
+   - API Gateway (for Backend)
+   - Lambda
+   - ECS
+   - DynamoDB (for Database)
+4. Docker
