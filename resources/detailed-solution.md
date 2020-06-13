@@ -12,14 +12,12 @@ In event that a fire is detected, an immediate notification would be sent to the
 
 This solution hopes to reduce the time taken to respond to a fire threat, reducing casualties and possible financial losses. 
 
-## Application
-SCDF Officer will interact with this website (in React) to access real time video footages of camera around Singapore. Notification are made available to the user to alert them of any fire detected in the backend.
+## Website
+This website acts as a dashboard which will be displayed in the SCDF HQ. In event of a calamity such as when a fire has broken out, a notification will be received and immediately, real-time video footage of the current situation will be shown on the website.
 
-Users can also view the various AED devices across the island. 
-
-* For demonstration purposes, there is an additional page to upload the "fire footage" to simulate the actual CCTV video streaming being sent up to IBM Cloud Object Storage. The footage would then be analysed for fire. Once fire is detected, the frontend will be notified to show alert for our SCDF Officers. From there, the SCDF Officers can click onto the alert and view the video footage and determine the intensity of the fire. Having able to view the situation remotely, the SCDF Officers would be able to better allocate sufficent necessary emergency resource to resolve the issue in an efficient manner. 
-
-## Workflow 
+Not only does the footage provide crucial information such as the intensity of the fire so that the fire can be contained immediately and effectively, it also allows SCDF Officers to analyse the fire from a safe distance.
+ 
+## Backend Workflow 
 1. CCTVs stream video footage to Cloud Object Storage
 2. Cloud Object Storage (COS) triggers Cloud Function with COS Trigger Function
 3. Cloud Function (Python) utilises boto3 to call ECS and create a new task 
