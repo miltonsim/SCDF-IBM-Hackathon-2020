@@ -61,7 +61,7 @@ class DemoFireDetection extends React.Component {
             <>
 
                 {/* <Header/> */}
-                <div className="header bg-gradient-info pb-8 pt-5 pt-md-8">
+                <div className="header newBgColor pb-8 pt-5 pt-md-8">
 
                     <Container fluid>
                         {/* Table */}

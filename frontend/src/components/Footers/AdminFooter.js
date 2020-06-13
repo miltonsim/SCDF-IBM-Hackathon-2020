@@ -25,10 +25,13 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer">
+        <Row>
+          <img src={require("assets/img/theme/icon-line.svg")}/>
+        </Row>
         <Row className="align-items-center justify-content-xl-between">
           <Col xl="6">
             <div className="copyright text-center text-xl-left text-muted">
-              © 2020{" "} SCDF x IBM
+              © 2020{" "} SCDF x IBM - Team BLMNK
             </div>
           </Col>
 

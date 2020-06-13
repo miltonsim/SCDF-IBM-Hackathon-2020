@@ -134,8 +134,7 @@ class Sidebar extends React.Component {
               src={require("assets/img/brand/scdfxibmlogo.jpg")}
             />
             <h2>SCDF x IBM</h2>
-            <h4>Team BLMNK</h4>
-            <h5>APPLICATION NAME HERE</h5>
+            <h5>Welcome to <b>SCDF Eye</b></h5>
           </NavbarBrand>
           {/* User */}
           <Nav className="align-items-center d-md-none">
