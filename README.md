@@ -31,11 +31,11 @@ not compulsory
 ## Technology Used
 1. React for Frontend
 2. IBM Cloud 
-  - Cloud Object Storage (for Storage of Video Footages)
-  - Cloud Function
+   - Cloud Object Storage (for Storage of Video Footages)
+   - Cloud Function
 3. AWS Cloud
-  - API Gateway (for Backend)
-  - Lambda
-  - ECS
-  - DynamoDB (for Database)
+   - API Gateway (for Backend)
+   - Lambda
+   - ECS
+   - DynamoDB (for Database)
 4. Docker
