@@ -12,9 +12,11 @@ Milton | Cloud Architect
 Nigel | Data Analyst
 
 ## Description
-Selected Problem Statement: 
+Selected Problem Statement: INTEGRATING WITH A SMART ENVIRONMENT
 
-Fire Detection:
+<SHORT DESCRIPTION HERE of the problem you are tackling, how technology can help, as
+well as the idea your team is proposing>
+
 ### Frontend Application
 SCDF Officer will interact with this website to access real time video footages of camera around Singapore. Notification are made available to the user to alert them of any fire detected in the backend.
 
