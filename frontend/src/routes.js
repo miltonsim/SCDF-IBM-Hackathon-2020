@@ -17,6 +17,7 @@
 */
 import Index from "views/Index.js";
 import Maps from "views/examples/Maps.js";
+import CameraMap from 'views/examples/CameraMap.js';
 
 import DemoFireDetection from "views/examples/DemoFireDetection.js";
 
@@ -33,6 +34,13 @@ var routes = [
     name: "Maps",
     icon: "ni ni-square-pin text-orange",
     component: Maps,
+    layout: "/admin",
+  },
+  {
+    path: "/cameraMap",
+    name: "Camera Map",
+    icon: "ni ni-square-pin text-orange",
+    component: CameraMap,
     layout: "/admin",
   },
   {
