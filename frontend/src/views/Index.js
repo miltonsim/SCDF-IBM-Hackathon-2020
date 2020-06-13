@@ -96,7 +96,7 @@ const Index = () => {
                 <Row className="align-items-center">
                   <div className="col">
                     <h6 className="text-uppercase text-light ls-1 mb-1">
-                      <img src="../assets/img/icons/common/live-news.svg" />
+                    <img src={require("assets/img/icons/common/live-news.svg")} width="30px" height="30px"/>
                     </h6>
                     <h2 className="text-white mb-0">Live Feed</h2>
                   </div>
