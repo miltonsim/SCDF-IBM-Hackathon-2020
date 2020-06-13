@@ -1,6 +1,8 @@
 import React from "react";
 import ReactMapGL, { Marker } from "react-map-gl";
 
+import axios from 'axios';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 class CameraMap extends React.Component {
@@ -13,6 +15,7 @@ class CameraMap extends React.Component {
       width: "100vw",
       height: "100vh",
     },
+    cameraCoordinates: [],
     coordinate: {
       latitude: 1.25865466476467,
       longitude: 103.818390225510001
@@ -24,10 +27,36 @@ class CameraMap extends React.Component {
   componentDidMount() {
     console.log("component did mount camera map");
 
-    
+    axios.get("https://4v3nsgopzi.execute-api.ap-southeast-1.amazonaws.com/scan_camera")
+      .then(res => {
+        console.log(res);
+        const marker = res.data.map((coordinates) => {
+          return ({
+            latitude: parseFloat(coordinates.location.S.split(',')[0]),
+            longitude: parseFloat(coordinates.location.S.split(',')[1]),
+          })
+        })
+
+        console.log(marker)
+
+        this.setState({
+          cameraCoordinates: marker
+        })
+      })
   }
 
   render() {
+
+    const markerList = this.state.cameraCoordinates.map((cameraCoordinate, index) => {
+      return (<Marker
+        key={index}
+        latitude={cameraCoordinate.latitude}
+        longitude={cameraCoordinate.longitude}
+      >
+        <i className="ni ni-camera-compact text-danger"></i>
+      </Marker>)
+    })
+    
     return (
       <div>
         <ReactMapGL
@@ -42,13 +71,8 @@ class CameraMap extends React.Component {
           style={{ maxWidth: "100%" }}
           children={this.props.children}
         >
-          <Marker
-            key="test"
-            latitude={this.state.coordinate.latitude}
-            longitude={this.state.coordinate.longitude}
-          >
-            <i className="ni ni-camera-compact text-danger"></i>
-          </Marker>
+
+          {markerList}
         </ReactMapGL>
       </div>
     );
