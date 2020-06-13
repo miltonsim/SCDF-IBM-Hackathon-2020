@@ -2,7 +2,7 @@
 
 ## Our Team - BLMNK 
 
-!["Team Logo"](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/logo.jpg)
+!["Team Logo"](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/logo.jpg =80x80)
 
 Member | Role
 ------ | -----
