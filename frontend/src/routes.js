@@ -17,8 +17,8 @@
 */
 import Index from "views/Index.js";
 import Maps from "views/examples/Maps.js";
-import CameraMap from 'views/examples/CameraMap.js';
-
+import CameraMap from "views/examples/CameraMap.js";
+import Video from "views/examples/Video";
 import DemoFireDetection from "views/examples/DemoFireDetection.js";
 
 var routes = [
@@ -27,6 +27,13 @@ var routes = [
     name: "Dashboard",
     icon: "ni ni-chart-bar-32 text-primary",
     component: Index,
+    layout: "/admin",
+  },
+  {
+    path: "/test",
+    name: "Dashboard",
+    icon: "ni ni-chart-bar-32 text-primary",
+    component: Video,
     layout: "/admin",
   },
   {
