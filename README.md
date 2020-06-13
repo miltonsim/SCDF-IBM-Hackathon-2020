@@ -28,6 +28,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduci
 ![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.jpeg)
 
 ## Detailed Solution
+Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/detailed-solution.md) for more descriptions
 
 ## Project Roadmap
 not compulsory
