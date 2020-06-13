@@ -1,7 +1,7 @@
-# SCDF x IBM
+# SCDF x IBM (SCDF Eye)
+Welcome to SCDF Eye
 
 ## Our Team - BLMNK 
-
 <img src="https://github.com/lkldev/SCDF-IBM/blob/master/resources/logo.jpg" width="100" height="100" />
 
 Member | Role
