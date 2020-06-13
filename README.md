@@ -25,7 +25,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduci
 [![Pitch Video on Youtube](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Architecture
-![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/architecture.jpeg)
+![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/solution-architecture.jpeg)
 
 ## Detailed Solution
 
