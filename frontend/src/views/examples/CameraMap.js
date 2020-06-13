@@ -1,9 +1,11 @@
 import React from "react";
-import ReactMapGL, { Marker } from "react-map-gl";
+import ReactMapGL, { Marker, Popup } from "react-map-gl";
 
 import axios from 'axios';
+import { Tooltip } from 'reactstrap';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
+import { textChangeRangeIsUnchanged } from "typescript";
 
 class CameraMap extends React.Component {
 
@@ -19,10 +21,16 @@ class CameraMap extends React.Component {
     coordinate: {
       latitude: 1.25865466476467,
       longitude: 103.818390225510001
-    }
+    },
+    popupInfo: null,
+    showPopup: true,
+    tooltipOpen: false
   }
 
   arr = [];
+
+  toggle = () => this.setState({
+    tooltipOpen: !this.state.tooltipOpen});
 
   componentDidMount() {
     console.log("component did mount camera map");
@@ -34,6 +42,8 @@ class CameraMap extends React.Component {
           return ({
             latitude: parseFloat(coordinates.location.S.split(',')[0]),
             longitude: parseFloat(coordinates.location.S.split(',')[1]),
+            address: coordinates.address.S,
+            show:false
           })
         })
 
@@ -45,6 +55,7 @@ class CameraMap extends React.Component {
       })
   }
 
+
   render() {
 
     const markerList = this.state.cameraCoordinates.map((cameraCoordinate, index) => {
@@ -53,10 +64,14 @@ class CameraMap extends React.Component {
         latitude={cameraCoordinate.latitude}
         longitude={cameraCoordinate.longitude}
       >
-        <i className="ni ni-camera-compact text-danger"></i>
-      </Marker>)
+        <i className="ni ni-camera-compact text-danger" id="testid"></i>
+        <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="testid" toggle={this.toggle}>
+        {cameraCoordinate.address}
+      </Tooltip>
+      </Marker >)
     })
-    
+    const { showPopup } = this.state;
+
     return (
       <div>
         <ReactMapGL
@@ -72,9 +87,20 @@ class CameraMap extends React.Component {
           children={this.props.children}
         >
 
+
+          {/* {showPopup && <Popup
+            latitude={1.420572}
+            longitude={103.864138}
+            closeButton={true}
+            closeOnClick={false}
+            onClose={() => this.setState({ showPopup: false })}
+            anchor="top" >
+            <div>You are here</div>
+          </Popup>} */}
+
           {markerList}
         </ReactMapGL>
-      </div>
+      </div >
     );
   }
 
