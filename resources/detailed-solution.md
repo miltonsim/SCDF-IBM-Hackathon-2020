@@ -1,7 +1,7 @@
 # Detailed Solution
 
 ## Solution Architecture
-![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/solution-architecture.jpeg)
+![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.jpeg)
 
 ## Solution Description
 Problem Statement: **Integrating with a smart environment**
@@ -23,7 +23,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduci
 8. React website retrieves information about the CCTV through an API which uses API Gateway, Lambda and DynamoDB
 
 ## Proof-Of-Concept (POC) Architecture
-![POC Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/poc-architecture.png)
+![POC Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/poc-architecture.png)
 
 ## POC Description
 Due to the inherent nature of CCTVs, during the hackathon, we are unable to obtain a CCTV and stream its content to the COS. 

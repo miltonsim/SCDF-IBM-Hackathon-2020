@@ -2,7 +2,7 @@
 
 ## Our Team - BLMNK 
 
-<img src="https://github.com/lkldev/SCDF-IBM/blob/master/resouces/logo.jpg" width="100" height="100" />
+<img src="https://github.com/lkldev/SCDF-IBM/blob/master/resources/logo.jpg" width="100" height="100" />
 
 Member | Role
 ------ | -----
@@ -25,7 +25,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduci
 [![Pitch Video on Youtube](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Architecture
-![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resouces/solution-architecture.jpeg)
+![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.jpeg)
 
 ## Detailed Solution
 
