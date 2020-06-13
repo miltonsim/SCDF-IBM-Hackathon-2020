@@ -12,7 +12,7 @@ Milton | Cloud Architect
 Nigel | Data Analyst
 
 ## Description
-Selected Problem Statement: INTEGRATING WITH A SMART ENVIRONMENT
+Selected Problem Statement: INTEGRATING WITH A SMART ENVIRONMENT / EMERGENCY MEDICAL SERVICES
 
 <SHORT DESCRIPTION HERE of the problem you are tackling, how technology can help, as
 well as the idea your team is proposing>
