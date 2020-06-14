@@ -60,8 +60,9 @@ Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/maste
 2. Create and setup Dynamodb, API Gateway, ECS, Lambda on AWS Account
 
 ## Live Demo
-[EyeNet](http://chialiyun.github.io/eyenet)
+Website: [EyeNet](http://chialiyun.github.io/eyenet)
 
+Video Demo:
 [![Live Demo Video](https://img.youtube.com/vi/ZC9FDSDolbM/0.jpg)](https://youtu.be/ZC9FDSDolbM)
 
 ## Technology Used
