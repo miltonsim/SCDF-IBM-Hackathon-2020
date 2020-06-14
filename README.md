@@ -26,7 +26,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduce
 The serverless solution leverages on the power of cloud computing and its architecture allows it to scale almost infintely and making processing of millions of CCTV video footages simultaneously a reality. 
 
 ## Pitch Video
-[![Pitch Video on Youtube]](https://youtu.be/0tg1vRz53QE/0.jpg)(https://youtu.be/0tg1vRz53QE)
+[![Pitch Video on Youtube](https://img.youtube.com/vi/0tg1vRz53QE/0.jpg)](https://youtu.be/0tg1vRz53QE)
 
 ## Architecture
 ![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.png)
@@ -62,7 +62,7 @@ Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/maste
 ## Live Demo
 [EyeNet](http://chialiyun.github.io/eyenet)
 
-[![Live Demo Video]](https://youtu.be/ZC9FDSDolbM/0.jpg)(https://youtu.be/ZC9FDSDolbM)
+[![Live Demo Video](https://img.youtube.com/vi/ZC9FDSDolbM/0.jpg)](https://youtu.be/ZC9FDSDolbM)
 
 ## Technology Used
 1. React (Displays front-end website)
