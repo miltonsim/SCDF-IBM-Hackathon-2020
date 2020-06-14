@@ -145,7 +145,7 @@ const Index = () => {
       latitude={cameraCoordinate.latitude}
       longitude={cameraCoordinate.longitude}
     >
-      <i class="fa fa-fire text-danger"  id={"test-" + index}></i>
+      <i class="fa fa-fire text-danger" style={{"font-size": 2 + "em"}} id={"test-" + index}></i>
       {
           index === 0 ?
             <Tooltip placement="right" isOpen={tooltipOpen} target={"test-" + index} toggle={toggle}>
