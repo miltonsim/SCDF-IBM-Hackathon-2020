@@ -63,6 +63,7 @@ Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/maste
 Website: [EyeNet](http://chialiyun.github.io/eyenet)
 
 Video Demo:
+
 [![Live Demo Video](https://img.youtube.com/vi/ZC9FDSDolbM/0.jpg)](https://youtu.be/ZC9FDSDolbM)
 
 ## Technology Used
