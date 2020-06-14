@@ -53,6 +53,8 @@ const Index = () => {
   const [videoName, setVideoName] = useState("");
   const [error, setError] = useState("");
 
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+
   const [viewport, setViewPort] = useState({
     latitude: 1.340863,
     longitude: 103.8303918,
@@ -135,6 +137,8 @@ const Index = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const toggle = () => setTooltipOpen(!tooltipOpen);
+
   const markerList = fireCoordinates.map((cameraCoordinate, index) => {
     return (<Marker
       key={index}
@@ -142,7 +146,14 @@ const Index = () => {
       longitude={cameraCoordinate.longitude}
     >
       <i class="fa fa-fire text-danger"  id={"test-" + index}></i>
-    
+      {
+          index === 0 ?
+            <Tooltip placement="right" isOpen={tooltipOpen} target={"test-" + index} toggle={toggle}>
+              {cameraCoordinate.address}
+            </Tooltip>
+            :
+            ""
+        }
     </Marker >)
   })
 
