@@ -29,13 +29,7 @@ var routes = [
     component: Index,
     layout: "/admin",
   },
-  {
-    path: "/test",
-    name: "Dashboard",
-    icon: "ni ni-chart-bar-32 text-primary",
-    component: Video,
-    layout: "/admin",
-  },
+
   {
     path: "/maps",
     name: "Maps",
