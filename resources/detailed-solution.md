@@ -36,3 +36,13 @@ Not only does the footage provide crucial information such as the intensity of t
 Due to the inherent nature of CCTVs, during the hackathon, we are unable to obtain a CCTV and stream its content to the COS. 
 
 As such, for the showcase, we will be using a test video to simulate the CCTV footage and our solution mechanism which involves the detection of fire and perosn falling using ML and notification.
+
+### Website Screenshot
+*Dashboard*
+![Dashboard](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Dashboard.png)
+
+*Camera Locations in Map View*
+![Camera Locations in Map View](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Camera%20Map.png)
+
+*Demo Fire/Fall Detection - Upload Sample Video Footage*
+![Demo Fire/Fall Detection](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Detect%20Fire%20Demo.png)
