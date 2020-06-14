@@ -15,8 +15,6 @@ Nigel Chen | Backend Developer
 ## Description
 Problem Statement: **Integrating with a smart environment**
 
-Problem Statement: Integrating with a smart environment
-
 Our solution plans to tap on the expansive network of CCTVs in Singapore to detect fires and falls using the power of Machine Learning (ML).
 
 In an unfortunate situation when a fire is detected, an immediate notification would be sent to the HQ with a live feed of the fire, allowing the commanders to make crucial decisions such as how many firefighters should be dispatched, what type of fire equipments would be effective.
