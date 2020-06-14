@@ -37,7 +37,7 @@ Due to the inherent nature of CCTVs, during the hackathon, we are unable to obta
 
 As such, for the showcase, we will be using a test video to simulate the CCTV footage and our solution mechanism which involves the detection of fire and perosn falling using ML and notification.
 
-In addition, we would not be able to send a notification to alert the CFRs through the myResponder app as we do not have an API to interface with the application.
+In addition, we would not be able to send notifications to alert the CFRs through the myResponder app as we do not have an API to interface with the application.
 
 ## Website Screenshot
 *Dashboard - Fire Pin Point on Map Upon Detection of Fire from CCTV Footage in the Backend*
