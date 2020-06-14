@@ -1,7 +1,7 @@
 # Detailed Solution
 
 ## Solution Architecture
-![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.jpeg)
+![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.png)
 
 ## Solution Description
 Problem Statement: **Integrating with a smart environment**
