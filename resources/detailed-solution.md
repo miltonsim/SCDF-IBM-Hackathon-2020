@@ -38,8 +38,11 @@ Due to the inherent nature of CCTVs, during the hackathon, we are unable to obta
 As such, for the showcase, we will be using a test video to simulate the CCTV footage and our solution mechanism which involves the detection of fire and perosn falling using ML and notification.
 
 ### Website Screenshot
-*Dashboard*
-![Dashboard](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Dashboard.png)
+*Dashboard - Fire Pin Point on Map Upon Detection of Fire from CCTV Footage in the Backend*
+![Dashboard1](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Dashboard1.png)
+
+*Dashboard - Live View of CCTV Footage that has Fire Detected*
+![Dashboard2](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Dashboard2.png)
 
 *Camera Locations in Map View*
 ![Camera Locations in Map View](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/Camera%20Map.png)
