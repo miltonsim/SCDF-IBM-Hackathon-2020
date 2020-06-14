@@ -26,7 +26,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduce
 The serverless solution leverages on the power of cloud computing and its architecture allows it to scale almost infintely and making processing of millions of CCTV video footages simultaneously a reality. 
 
 ## Pitch Video
-[![Pitch Video on Youtube](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Pitch Video on Youtube]](https://youtu.be/0tg1vRz53QE)
 
 ## Architecture
 ![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.png)
@@ -40,19 +40,28 @@ Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/maste
 ## Getting Started
 
 ### Requirements
-1. Mapbox Account - Get a Token
-2. IBM Account - Cloud Object Storage to hold to Video Footages
+1. Mapbox Account - API Token for Map
+2. IBM Account - Cloud Object Storage (COS) and Cloud Functions
+3. AWS Account - Dynamodb, API Gateway, ECS, Lambda
 
-### Set Up
+### Frontend Set Up
 1. Clone this current Repo
 2. Create .env at the frontend folder with the following information:
-   - REACT_APP_MAPBOX_TOKEN
-   - REACT_APP_IBM_ACCESSKEY
-   - REACT_APP_IBM_SAKEY
-   - REACT_APP_IBM_ENDPOINT
-   - REACT_APP_IBM_SIID
-   - REACT_APP_IBM_SIID
+   - REACT_APP_MAPBOX_TOKEN (Mapbox token)
+   - REACT_APP_IBM_ACCESSKEY (IBM Access Key for COS)
+   - REACT_APP_IBM_SAKEY (IBM Secret Access Key for COS)
+   - REACT_APP_IBM_ENDPOINT (IBM Endpoint for COS)
+   - REACT_APP_IBM_SIID (IBM Service Instance ID for COS)
+   - REACT_APP_IBM_BUCKET (IBM Bucket name for COS)
 3. In the frontend folder, run `npm start` to run the website
+
+### Backend Set Up
+1. Create and setup Object Storage, Cloud Functions on IBM Account
+2. Create and setup Dynamodb, API Gateway, ECS, Lambda on AWS Account
+
+## Live Demo
+[EyeNet](http://chialiyun.github.io/eyenet)
+[![Live Demo Video]](https://youtu.be/ZC9FDSDolbM)
 
 ## Technology Used
 1. React (Displays front-end website)
