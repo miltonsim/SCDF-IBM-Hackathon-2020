@@ -46,7 +46,7 @@ var routes = [
   },
   {
     path: "/demoFireDetection",
-    name: "Demo Fire Detection",
+    name: "Demo Fire/Fall Detection",
     icon: "ni ni-folder-17 text-primary",
     component: DemoFireDetection,
     layout: "/admin",
