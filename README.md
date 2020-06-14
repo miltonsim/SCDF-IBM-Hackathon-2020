@@ -39,6 +39,21 @@ Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/maste
 
 ## Getting Started
 
+### Requirements
+1. Mapbox Account - Get a Token
+2. IBM Account - Cloud Object Storage to hold to Video Footages
+
+### Set Up
+1. Clone this current Repo
+2. Create .env at the frontend folder with the following information:
+   - REACT_APP_MAPBOX_TOKEN
+   - REACT_APP_IBM_ACCESSKEY
+   - REACT_APP_IBM_SAKEY
+   - REACT_APP_IBM_ENDPOINT
+   - REACT_APP_IBM_SIID
+   - REACT_APP_IBM_SIID
+3. In the frontend folder, run `npm start` to run the website
+
 ## Technology Used
 1. React (Displays front-end website)
 2. Docker (Containerise ML for deployment) 
