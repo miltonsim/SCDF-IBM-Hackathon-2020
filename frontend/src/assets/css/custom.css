@@ -43,3 +43,7 @@
     text-transform: capitalize;
     text-align: center;
 }
+
+.newBgColor {
+    background: linear-gradient(to right, #E65427, #294286) 
+}

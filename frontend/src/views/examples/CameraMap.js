@@ -5,7 +5,8 @@ import axios from 'axios';
 import { Tooltip } from 'reactstrap';
 
 import 'mapbox-gl/dist/mapbox-gl.css';
-import { textChangeRangeIsUnchanged } from "typescript";
+
+import * as aedData from "../../data/aedLocation.json";
 
 class CameraMap extends React.Component {
 
@@ -30,7 +31,8 @@ class CameraMap extends React.Component {
   arr = [];
 
   toggle = () => this.setState({
-    tooltipOpen: !this.state.tooltipOpen});
+    tooltipOpen: !this.state.tooltipOpen
+  });
 
   componentDidMount() {
     console.log("component did mount camera map");
@@ -43,7 +45,7 @@ class CameraMap extends React.Component {
             latitude: parseFloat(coordinates.location.S.split(',')[0]),
             longitude: parseFloat(coordinates.location.S.split(',')[1]),
             address: coordinates.address.S,
-            show:false
+            show: false
           })
         })
 
@@ -64,12 +66,19 @@ class CameraMap extends React.Component {
         latitude={cameraCoordinate.latitude}
         longitude={cameraCoordinate.longitude}
       >
-        <i className="ni ni-camera-compact text-danger" id="testid"></i>
-        <Tooltip placement="right" isOpen={this.state.tooltipOpen} target="testid" toggle={this.toggle}>
-        {cameraCoordinate.address}
-      </Tooltip>
+        <i className="ni ni-camera-compact text-danger" id={"test-" + index}></i>
+        {
+          index === 0 ?
+            <Tooltip placement="right" isOpen={this.state.tooltipOpen} target={"test-" + index} toggle={this.toggle}>
+              {cameraCoordinate.address}
+            </Tooltip>
+            :
+            ""
+        }
+
       </Marker >)
     })
+
     const { showPopup } = this.state;
 
     return (
@@ -87,18 +96,8 @@ class CameraMap extends React.Component {
           children={this.props.children}
         >
 
-
-          {/* {showPopup && <Popup
-            latitude={1.420572}
-            longitude={103.864138}
-            closeButton={true}
-            closeOnClick={false}
-            onClose={() => this.setState({ showPopup: false })}
-            anchor="top" >
-            <div>You are here</div>
-          </Popup>} */}
-
           {markerList}
+
         </ReactMapGL>
       </div >
     );

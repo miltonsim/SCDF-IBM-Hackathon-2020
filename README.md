@@ -1,7 +1,7 @@
-# SCDF x IBM
+# SCDF x IBM (SCDF Eye)
+Welcome to SCDF Eye
 
 ## Our Team - BLMNK 
-
 <img src="https://github.com/lkldev/SCDF-IBM/blob/master/resources/logo.jpg" width="100" height="100" />
 
 Member | Role
@@ -15,11 +15,15 @@ Nigel Chen | Backend Developer
 ## Description
 Problem Statement: **Integrating with a smart environment**
 
-Our solution plans to tap on the expansive network of CCTVs in Singapore to detect fires using the power of Machine Learning. 
+Our solution plans to tap on the expansive network of CCTVs in Singapore to detect fires and falls using the power of Machine Learning (ML). 
 
-In event that a fire is detected, an immediate notification would be sent to the HQ with a live feed of the fire, allowing the commanders to make crucial decisions such as how many firefighters should be dispatched, what type of fire equipments would be effective.
+In an unfortunate situation when a fire is detected, an immediate notification would be sent to the HQ with a live feed of the fire, allowing the commanders to make crucial decisions such as how many firefighters should be dispatched, what type of fire equipments would be effective.
 
-This solution hopes to reduce the time taken to respond to a fire threat, reducing casualties and possible financial losses. 
+Moreover, a notification will also be sent with the live feed when the ML has detected a person who has fell, enabling SCDF to scramble the appropriate resources to provide aid. 
+
+This solution hopes to reduce the time taken to respond to a fire threat, reduce casualties and possible financial losses.
+
+The serverless solution leverages on the power of cloud computing and its architecture allows it to scale almost infintely and making processing of millions of CCTV video footages simultaneously a reality. 
 
 ## Pitch Video
 [![Pitch Video on Youtube](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
@@ -28,9 +32,10 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduci
 ![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.jpeg)
 
 ## Detailed Solution
+Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/detailed-solution.md) for more descriptions
 
 ## Project Roadmap
-not compulsory
+![Project Roadmap](https://github.com/lkldev/SCDF-IBM/blob/master/resources/project-roadmap.png)
 
 ## Getting Started
 
