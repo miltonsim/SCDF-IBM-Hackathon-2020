@@ -1,6 +1,7 @@
 
 import React from "react";
-
+import ibm from "ibm-cos-sdk";
+import  { Link } from 'react-router-dom';
 import {
     Container,
     Button,
@@ -13,13 +14,31 @@ import {
 
 import '../../assets/css/custom.css';
 
+var config = {
+    accessKeyId: process.env.REACT_APP_IBM_ACCESSKEY,
+    secretAccessKey: process.env.REACT_APP_IBM_SAKEY,
+    endpoint: process.env.REACT_APP_IBM_ENDPOINT,
+    serviceInstanceId: process.env.REACT_APP_IBM_SIID
+}
+
+
+
+var cos = new ibm.S3(config);
+
+function doCreateObject(filename, data) {
+    console.log('Creating object');
+    return cos.putObject({
+        Bucket: process.env.REACT_APP_IBM_BUCKET,
+        Key: filename,
+        Body: data 
+    }).promise();
+}
+
 class DemoFireDetection extends React.Component {
     state = {
         selectedFile: null
     }
-    readFileDataAsBase64(e) {
-        const file = e.target.files[0];
-    
+    readFileDataAsBase64(file) {    
         return new Promise((resolve, reject) => {
             const reader = new FileReader();
     
@@ -36,24 +55,35 @@ class DemoFireDetection extends React.Component {
     }
 
     onChangeHandler = event => {
-
-        console.log(event.target.files[0])
+        
         this.setState({
             selectedFile: event.target.files[0],
             loaded: 0,
         })
 
-        this.readFileDataAsBase64(event).then(result => {
-            // here's the file
-            console.log(result);
-        })
+        // this.readFileDataAsBase64(event).then(result => {
+        //     // here's the file
+        //     console.log(result.split(";"));
+        // })
     }
 
     onClickHandler = () => {
-        const data = new FormData()
-        data.append('file', this.state.selectedFile)
+        const file = this.state.selectedFile;
+        const filename = file.name;
+        const fileData = this.readFileDataAsBase64(file);
+        fileData.then(result => {
+            var data = result.split(";")[1].split(",")[1];
+            doCreateObject(filename, new Buffer(data, 'base64')).then(function() {
+                console.log('Uploaded!');
+                
+            })
+            .catch(function(err) {
+                console.error('An error occurred:');
+                console.error(err);
+            });
+        });
 
-        console.log(data);
+        
     }
 
     render() {
@@ -79,8 +109,7 @@ class DemoFireDetection extends React.Component {
                                             </div>
                                         </form>
 
-                                        <button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button>
-
+                                        <Link to="/admin/index"><button type="button" className="btn btn-success btn-block" onClick={this.onClickHandler}>Upload</button></Link>
                                     </CardBody>
                                 </Card>
                             </div>
