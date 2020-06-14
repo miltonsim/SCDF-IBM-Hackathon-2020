@@ -29,7 +29,7 @@ The serverless solution leverages on the power of cloud computing and its archit
 [![Pitch Video on Youtube](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Architecture
-![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.jpeg)
+![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.png)
 
 ## Detailed Solution
 Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/detailed-solution.md) for more descriptions
