@@ -1,5 +1,5 @@
-# SCDF x IBM (SCDF Eye)
-Welcome to SCDF Eye
+# SCDF x IBM (EyeNet)
+Welcome to EyeNet
 
 ## Our Team - BLMNK 
 <img src="https://github.com/lkldev/SCDF-IBM/blob/master/resources/logo.jpg" width="100" height="100" />
