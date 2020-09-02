@@ -2,7 +2,7 @@
 Welcome to EyeNet
 
 ## Our Team - BLMNK 
-<img src="https://github.com/lkldev/SCDF-IBM/blob/master/resources/logo.jpg" width="100" height="100" />
+<img src="resources/logo.jpg" width="100" height="100" />
 
 Member | Role
 ------ | -----
@@ -26,16 +26,16 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduce
 The serverless solution leverages on the power of cloud computing and its architecture allows it to scale almost infintely and making processing of millions of CCTV video footages simultaneously a reality. 
 
 ## Pitch Video
-[![Pitch Video on Youtube](https://img.youtube.com/vi/0tg1vRz53QE/0.jpg)](https://youtu.be/0tg1vRz53QE)
+[![Pitch Video on Youtube](https://img.youtube.com/vi/MB4ESKC373A/0.jpg)](https://youtu.be/MB4ESKC373A)
 
 ## Architecture
-![Solution Architecture](https://github.com/lkldev/SCDF-IBM/blob/master/resources/solution-architecture.png)
+![Solution Architecture](resources/solution-architecture.png)
 
 ## Detailed Solution
-Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/master/resources/detailed-solution.md) for the detailed solution.
+Check out this [link](resources/detailed-solution.md) for the detailed solution.
 
 ## Project Roadmap
-![Project Roadmap](https://github.com/lkldev/SCDF-IBM/blob/master/resources/project-roadmap.png)
+![Project Roadmap](resources/project-roadmap.png)
 
 ## Getting Started
 
@@ -58,13 +58,6 @@ Check out this [link](https://github.com/lkldev/BLMNK-EyeNet_SCDFXIBM/blob/maste
 ### Backend Set Up
 1. Create and setup Object Storage, Cloud Functions on IBM Account
 2. Create and setup Dynamodb, API Gateway, ECS, Lambda on AWS Account
-
-## Live Demo
-Website: [EyeNet](http://chialiyun.github.io/eyenet)
-
-Video Demo:
-
-[![Live Demo Video](https://img.youtube.com/vi/ZC9FDSDolbM/0.jpg)](https://youtu.be/ZC9FDSDolbM)
 
 ## Technology Used
 1. React (Displays front-end website)
