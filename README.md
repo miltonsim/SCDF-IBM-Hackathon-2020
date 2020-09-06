@@ -26,7 +26,7 @@ This solution hopes to reduce the time taken to respond to a fire threat, reduce
 The serverless solution leverages on the power of cloud computing and its architecture allows it to scale almost infintely and making processing of millions of CCTV video footages simultaneously a reality. 
 
 ## Pitch Video
-[![Pitch Video on Youtube](https://img.youtube.com/vi/MB4ESKC373A/0.jpg)](https://youtu.be/MB4ESKC373A)
+[![Pitch Video on Youtube](https://img.youtube.com/vi/0tg1vRz53QE/0.jpg)](https://youtu.be/0tg1vRz53QE)
 
 ## Architecture
 ![Solution Architecture](resources/solution-architecture.png)
